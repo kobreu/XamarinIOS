@@ -1,0 +1,11 @@
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/optimized/
+/Users/kbreu/Projects/Appi/Appi/bin/iPhoneSimulator/Debug/Appi.exe.mdb
+/Users/kbreu/Projects/Appi/Appi/bin/iPhoneSimulator/Debug/Appi.exe
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/Appi.exe
+/Users/kbreu/Projects/Appi/Appi/obj/iPhoneSimulator/Debug/Appi.exe.mdb
+/Users/kbreu/Projects/Appi/Appi/bin/iPhoneSimulator/Debug/Payworks.dll
+/Users/kbreu/Projects/Appi/Appi/bin/iPhoneSimulator/Debug/Payworks.dll.mdb

@@ -1,0 +1,11 @@
+platform :ios, '10.0'
+install! 'cocoapods', :integrate_targets => false
+target 'ObjectiveSharpieIntegration' do
+  use_frameworks!
+end
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://bitbucket.org/mpymnt/io.mpymnt.repo.pods.git'
+
+pod 'payworks/mpos/core', '2.15.0'
+

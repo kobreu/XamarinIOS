@@ -1,0 +1,22 @@
+PODS:
+  - CocoaLumberjack (2.0.3):
+    - CocoaLumberjack/Default (= 2.0.3)
+    - CocoaLumberjack/Extensions (= 2.0.3)
+  - CocoaLumberjack/Core (2.0.3)
+  - CocoaLumberjack/Default (2.0.3):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.3):
+    - CocoaLumberjack/Default
+  - payworks/mpos/core (2.15.0):
+    - CocoaLumberjack (~> 2.0.0)
+
+DEPENDENCIES:
+  - payworks/mpos/core (= 2.15.0)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  payworks: 8461e79096d2306ea1125f8fb972553a47a2400a
+
+PODFILE CHECKSUM: 847b5c4be035b37477a5d445ec0d5267d1bd092a
+
+COCOAPODS: 1.1.1

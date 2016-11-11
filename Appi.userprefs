@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{CE0071E2-A54C-4B9A-A5C8-EE89A102CC24}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Appi/ViewController.cs">
+    <Files>
+      <File FileName="Appi/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="Appi/ViewController.cs" Line="22" Column="1" />
+      <File FileName="Appi/ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Appi/Main.cs" Line="12" Column="1" />
+      <File FileName="Appi/Payworks/mpos.core_ApiDefinitions.cs" Line="18" Column="30" />
+      <File FileName="Appi/Payworks/mpos.core_StructsAndEnums.cs" Line="22" Column="16" />
+      <File FileName="Payworks/ApiDefinition.cs" Line="493" Column="51" />
+      <File FileName="Payworks/Structs.cs" Line="163" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/kbreu/Projects/Appi/Appi/ViewController.cs" line="20" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Appi PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC50187C-F7E3-41BB-AAAC-B3C9E2637651" />
+</Properties>

@@ -1,0 +1,5 @@
+/Users/kbreu/Projects/Appi/Payworks/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/kbreu/Projects/Appi/Payworks/bin/Debug/Payworks.dll.mdb
+/Users/kbreu/Projects/Appi/Payworks/bin/Debug/Payworks.dll
+/Users/kbreu/Projects/Appi/Payworks/obj/Debug/Payworks.dll
+/Users/kbreu/Projects/Appi/Payworks/obj/Debug/Payworks.dll.mdb
