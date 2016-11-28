@@ -17,15 +17,29 @@ namespace Appi
 			// Perform any additional setup after loading the view, typically from a nib.
 			//Console.WriteLine(MPProviderMode.Test);
 
-			var i = new Foundation.NSNumber(2);
+			//var i = new Foundation.NSNumber(2);
 
 			var transactionProvider = MPMpos.TransactionProviderForMode(MPProviderMode.Test, "identifier", "secret");
 
+			var factory = MPMpos.ProviderOptionsFactory();
+
+			var version = MPMpos.Version();
+
+			Console.WriteLine(version);
+			Console.WriteLine(MPMpos.Build());
+
+				//Console.WriteLine("llalala");
 			var amount = new Foundation.NSDecimalNumber("10.2");
 
 			MPTransactionParameters transactionParameters = MPTransactionParameters.ChargeWithAmount(amount, MPCurrency.EUR, null);
 
+			MPTransactionParameters transactionParameters2 = MPTransactionParameters.RefundForCustomIdentifier("alkjaljks", null);
+
 			MPAccessoryParameters accessoryParameters = MPAccessoryParameters.MockAccessoryParameters();
+
+
+
+			//MPAccessoryParameters accessoryParamters2 = MPAccessoryParameters.ExternalAccessoryParametersWithFamily(MPAccessoryFamily.MiuraMPI, "com.miura.shuttle", null);
 
 			MPTransactionProcess process = transactionProvider.StartTransactionWithParameters(transactionParameters, accessoryParameters, Registered, StatusChanged, ActionRequired, Completed);
 		}

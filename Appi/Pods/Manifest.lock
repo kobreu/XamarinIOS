@@ -7,16 +7,26 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
+  - Lockbox (2.1.0)
+  - MPBSignatureViewController (1.5.1)
+  - payworks.paybutton (2.15.0):
+    - Lockbox (~> 2.1.0)
+    - MPBSignatureViewController (= 1.5.1)
+    - payworks/mpos/core (= 2.15.0)
   - payworks/mpos/core (2.15.0):
     - CocoaLumberjack (~> 2.0.0)
 
 DEPENDENCIES:
+  - payworks.paybutton (= 2.15.0)
   - payworks/mpos/core (= 2.15.0)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  Lockbox: 16442da35d9d4286966936763be728a931d589c3
+  MPBSignatureViewController: 5cac4da390e070c17da9e929b46d2946514c4289
   payworks: 8461e79096d2306ea1125f8fb972553a47a2400a
+  payworks.paybutton: 28d0710d611e056d59a915e7acb093f064063f62
 
-PODFILE CHECKSUM: 847b5c4be035b37477a5d445ec0d5267d1bd092a
+PODFILE CHECKSUM: 3829089784bd225b1c51ada670fd01dc86e93a40
 
 COCOAPODS: 1.1.1

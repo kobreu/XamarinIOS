@@ -77,6 +77,29 @@ namespace Payworks
 	}
 
 	[Native]
+	public enum MPAccessoryFamily : long
+	{
+		/** Use a mock */
+   		Mock = 0,
+    
+	    /** Use the Miura MPI devices  */
+	    MiuraMPI = 1,
+	    
+	    /** Use the Verifone e-Series (except e105) */
+	    VerifoneESeries = 2,
+	    /** Use the Verifone e105 */
+	    VerifoneE105 = 3,
+	    
+	    /** Use the Sewoo printer */
+	    Sewoo = 4,
+	    
+	    /** Use the BBPOS WisePad or WisePOS */
+	    BBPOS = 5,
+	    /** Use the BBPOS Chipper */
+	    BBPOSChipper = 6
+	}
+
+	[Native]
 	public enum MPCurrency : long
 	{
 		/** Unknown or not available */
@@ -163,7 +186,7 @@ namespace Payworks
 	}
 
 	[Native]
-	public enum MPProviderMode : nuint
+	public enum MPProviderMode : long
 	{
 		Unknown = 0,
 		Live = 1,

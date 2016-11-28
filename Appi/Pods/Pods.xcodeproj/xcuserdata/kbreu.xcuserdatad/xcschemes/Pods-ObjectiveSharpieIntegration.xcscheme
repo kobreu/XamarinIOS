@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '68AC3FDF868F294DA827E808ED45FF54'
+               BlueprintIdentifier = '1908C8D3420E66A9AAE285F8AEFAB3CB'
                BlueprintName = 'Pods-ObjectiveSharpieIntegration'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-ObjectiveSharpieIntegration.framework'>

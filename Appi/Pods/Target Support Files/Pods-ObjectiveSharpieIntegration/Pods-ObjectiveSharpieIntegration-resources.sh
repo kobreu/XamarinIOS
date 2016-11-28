@@ -74,9 +74,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "payworks.paybutton/mpos-ui-resources.bundle"
   install_resource "payworks/mpos.core-resources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "payworks.paybutton/mpos-ui-resources.bundle"
   install_resource "payworks/mpos.core-resources.bundle"
 fi
 

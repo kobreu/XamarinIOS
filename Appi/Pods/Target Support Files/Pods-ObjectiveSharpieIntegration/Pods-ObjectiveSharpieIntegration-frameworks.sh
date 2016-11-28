@@ -85,7 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Lockbox/Lockbox.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MPBSignatureViewController/MPBSignatureViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Lockbox/Lockbox.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MPBSignatureViewController/MPBSignatureViewController.framework"
 fi

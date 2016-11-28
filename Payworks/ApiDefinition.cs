@@ -470,8 +470,7 @@ namespace Payworks
 		// +(MPProviderOptionsFactory * _Nonnull)providerOptionsFactory;
 		[Static]
 		[Export("providerOptionsFactory")]
-		//[Verify (MethodToProperty)]
-		MPProviderOptionsFactory ProviderOptionsFactory { get; }
+		MPProviderOptionsFactory ProviderOptionsFactory();
 
 		// +(MPProvider * _Nonnull)providerWithOptions:(MPProviderOptions * _Nonnull)options;
 		[Static]
@@ -481,14 +480,12 @@ namespace Payworks
 		// +(NSString * _Nonnull)version;
 		[Static]
 		[Export("version")]
-		//[Verify (MethodToProperty)]
-		string Version { get; }
+		string Version();
 
 		// +(NSString * _Nonnull)build;
 		[Static]
 		[Export("build")]
-		//[Verify (MethodToProperty)]
-		string Build { get; }
+		string Build();
 
 		// +(MPTransactionProvider * _Nonnull)transactionProviderForMode:(MPProviderMode)mode merchantIdentifier:(NSString * _Nonnull)merchantIdentifier merchantSecretKey:(NSString * _Nonnull)merchantSecretKey;
 		[Static]
@@ -1749,7 +1746,7 @@ namespace Payworks
 	{
 		// @property (readonly, assign, nonatomic) int accessoryFamily;
 		[Export("accessoryFamily")]
-		int AccessoryFamily { get; }
+		MPAccessoryFamily AccessoryFamily { get; }
 
 		// @property (readonly, assign, nonatomic) int connectionType;
 		[Export("connectionType")]
@@ -1771,17 +1768,17 @@ namespace Payworks
 		// +(instancetype _Nonnull)externalAccessoryParametersWithFamily:(id)family protocol:(NSString * _Nonnull)protocol optionals:(MPExternalAccessoryOptionalsBlock _Nullable)optionalsBlock;
 		[Static]
 		[Export("externalAccessoryParametersWithFamily:protocol:optionals:")]
-		MPAccessoryParameters ExternalAccessoryParametersWithFamily(NSObject family, string protocol, [NullAllowed] MPExternalAccessoryOptionalsBlock optionalsBlock);
+		MPAccessoryParameters ExternalAccessoryParametersWithFamily(MPAccessoryFamily family, string protocol, [NullAllowed] MPExternalAccessoryOptionalsBlock optionalsBlock);
 
 		// +(instancetype _Nonnull)audioJackAccessoryParametersWithFamily:(id)family optionals:(MPAccessoryOptionalsBlock _Nullable)optionalsBlock;
 		[Static]
 		[Export("audioJackAccessoryParametersWithFamily:optionals:")]
-		MPAccessoryParameters AudioJackAccessoryParametersWithFamily(NSObject family, [NullAllowed] MPAccessoryOptionalsBlock optionalsBlock);
+		MPAccessoryParameters AudioJackAccessoryParametersWithFamily(MPAccessoryFamily family, [NullAllowed] MPAccessoryOptionalsBlock optionalsBlock);
 
 		// +(instancetype _Nonnull)tcpAccessoryParametersWithFamily:(id)family remote:(NSString * _Nonnull)remote port:(NSUInteger)port optionals:(MPAccessoryOptionalsBlock _Nullable)optionalsBlock;
 		[Static]
 		[Export("tcpAccessoryParametersWithFamily:remote:port:optionals:")]
-		MPAccessoryParameters TcpAccessoryParametersWithFamily(NSObject family, string remote, uint port, [NullAllowed] MPAccessoryOptionalsBlock optionalsBlock);
+		MPAccessoryParameters TcpAccessoryParametersWithFamily(MPAccessoryFamily family, string remote, uint port, [NullAllowed] MPAccessoryOptionalsBlock optionalsBlock);
 
 		// +(instancetype _Nonnull)mockAccessoryParameters;
 		[Static]

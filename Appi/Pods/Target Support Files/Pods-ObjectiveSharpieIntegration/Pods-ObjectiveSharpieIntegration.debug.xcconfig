@@ -1,10 +1,10 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack" "${PODS_ROOT}/payworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack" "$PODS_CONFIGURATION_BUILD_DIR/Lockbox" "$PODS_CONFIGURATION_BUILD_DIR/MPBSignatureViewController" "${PODS_ROOT}/payworks.paybutton" "${PODS_ROOT}/payworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/payworks"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/payworks" "${PODS_ROOT}/Headers/Public/payworks.paybutton"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/payworks"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"icucore" -framework "CocoaLumberjack" -framework "ExternalAccessory" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "mpos.core"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Lockbox/Lockbox.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MPBSignatureViewController/MPBSignatureViewController.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/payworks" -isystem "${PODS_ROOT}/Headers/Public/payworks.paybutton"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"icucore" -framework "CocoaLumberjack" -framework "ExternalAccessory" -framework "Lockbox" -framework "MPBSignatureViewController" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "mpos-ui" -framework "mpos.core"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
